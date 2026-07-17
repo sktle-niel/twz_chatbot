@@ -1,0 +1,28 @@
+{
+  "name": "twz-loyverse-messenger-chatbot",
+  "version": "1.0.0",
+  "description": "Messenger chatbot for Two Wheels Zone motorcycle branches — answers product/stock inquiries per branch using the Loyverse API and Claude",
+  "type": "module",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.111.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "tsx": "^4.19.0",
+    "undici": "^8.7.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}
